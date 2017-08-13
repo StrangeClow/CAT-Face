@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>媒介查询</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        html {
+            font-family: "lucida Sans",sans-serif;
+            font-size: 62.5%;
+        }
+        header {
+            background-color: #ff938b;
+            color: #ffffff;
+            padding: 15px;
+        }
+        header h1 {
+            text-align: center;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu ul li {
+            padding:8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            -webkit-box-shadow: 0 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+            -moz-box-shadow: 0 1px rgba(0,0,0,0.12);
+            box-shadow: 0 1px rgba(0,0,0,0.12);
+        }
+        footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 15px;
+        }
+        /*  for Desktop */
+        .col-1 {
+            width:8.33%;
+        }
+        .col-2 {
+            width:16.66%;
+        }
+        .col-3 {
+            width:25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width:91.66%;
+        }
+        .col-12 {
+            width:100%;
+        }
+        @media only screen and (max-width:768px) {
+            /*for mobile phones*/
+        [class*="col-"] {
+            width:100%;
+        }
+        }
+        @media screen and (max-width: 900px) and (min-width: 768px){
+             body {
+                 background-color: rgba(87,122,220,0.6);
+             }
+            .col-2 {
+
+            }
+        }
+    </style>
+</head>
+<body>
+ <header>
+     <h1>china</h1>
+ </header>
+<div class="row">
+    <div class="col-3 menu">
+        <ul>
+            <li>湖北</li>
+            <li>十堰</li>
+            <li>茅箭区</li>
+            <li>北京南路</li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <h2>汉江师范</h2>
+        <p>指定输出设备中的页面可见区域高度大于或等于宽度,结合CSS媒体查询,可以创建适应不同设备的方向(横屏landscape、竖屏portrait等)的布局。</p>
+    </div>
+    <div class="col-2 right">
+        <div class="aside">
+            <h4>world</h4>
+            <p>haohaoxuexi tiantinaxiangshang</p>
+            <p>自适应不同的变化 适应不同的显示.</p>
+            <h3>如何显示</h3>
+            <p>创建类似于bootstrap中的栅格系统中的一种效果.在不同分辨率下的显示</p>
+            <h3>怎么操作</h3>
+            <p>media query在响应式中的应用以及如何去操作</p>
+        </div>
+    </div>
+    <div class="col-3 ">
+        <h3>media query</h3>
+        <P>时间总会一天天的过去 日子会越来越好的</P>
+        <P>Java的异常处理该准备买解决的问题</P>
+        <h5>webpack的应用</h5>
+        <span>移动端优先意味着在设计桌面和其他设备时优先考虑移动端的设计。
+这就意味着我们必须对 CSS 做一些改变。</span>
+    </div>
+</div>
+<footer>
+   <p> 缩放窗口来观察浏览器的显示情况 在不同终端的显示</p>
+</footer>
+</body>
+</html>
